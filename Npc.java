@@ -1,10 +1,10 @@
 /**
  * Eris Suther
- * Feb 15, 2023
+ * Mar 9, 2023
  */
-package dndProject;
+package entities;
 
-public class Npc extends People {
+public class Npc extends Entity {
 	// passive=0 neutral=1 or hostile=2
 	private int aggressionLevel;
 

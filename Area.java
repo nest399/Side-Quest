@@ -1,8 +1,8 @@
 /**
  * Eris Suther
- * Feb 15, 2023
+ * Mar 9, 2023
  */
-package dndProject;
+package items_and_areas;
 
 import java.util.List;
 

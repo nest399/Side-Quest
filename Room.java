@@ -1,15 +1,17 @@
 /**
  * Eris Suther
- * Feb 15, 2023
+ * Mar 9, 2023
  */
-package dndProject;
+package items_and_areas;
 
 import java.util.List;
+
+import entities.Entity;
 
 //includes rooms and hallways
 public class Room extends Area {
 	// who is in room
-	private List<People> people;
+	private List<Entity> entities;
 
 	// all the doors hallways and windows
 	private List<Area> entryPoints;
@@ -23,31 +25,31 @@ public class Room extends Area {
 	}
 
 	/**
-	 * @return the people
+	 * @return entities in the room
 	 */
-	public List<People> getPeople() {
-		return people;
+	public List<Entity> getEntities() {
+		return entities;
 	}
 
 	/**
-	 * @param people the people to set
+	 * @param entities the entities to set
 	 */
-	public void setPeople(List<People> people) {
-		this.people = people;
+	public void setEntity(List<Entity> entity) {
+		this.entities = entity;
 	}
 
 	/**
-	 * @param person the person to add
+	 * @param entity the entity to add
 	 */
-	public void addPeople(People person) {
-		this.people.add(person);
+	public void addEntity(Entity entity) {
+		this.entities.add(entity);
 	}
 
 	/**
-	 * @param person the person to remove
+	 * @param entity the entity to remove
 	 */
-	public void removePeople(People person) {
-		this.people.remove(person);
+	public void removeEntity(Entity entity) {
+		this.entities.remove(entity);
 	}
 
 	/**

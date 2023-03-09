@@ -1,12 +1,14 @@
 /**
  * Eris Suther
- * Feb 15, 2023
+ * Mar 9, 2023
  */
-package dndProject;
+package entities;
 
 import java.util.List;
 
-public class Player extends People {
+import items_and_areas.Task;
+
+public class Player extends Entity {
 	// xp and level (need level*5 to level up and when do get 0.1 more of a stat of
 	// choice)
 	private int level;
@@ -17,7 +19,7 @@ public class Player extends People {
 	private List<Task> tasksInProgress;
 
 	// who is on their team
-	private List<People> team;
+	private List<Entity> team;
 
 	// backstory? age? pronouns? notes?
 
@@ -118,28 +120,28 @@ public class Player extends People {
 	/**
 	 * @return the team
 	 */
-	public List<People> getTeam() {
+	public List<Entity> getTeam() {
 		return team;
 	}
 
 	/**
 	 * @param team the team to set
 	 */
-	public void setTeam(List<People> team) {
+	public void setTeam(List<Entity> team) {
 		this.team = team;
 	}
 
 	/**
 	 * @param teammate the teammate to add to team
 	 */
-	public void addTeammate(People teammate) {
+	public void addTeammate(Entity teammate) {
 		team.add(teammate);
 	}
 
 	/**
 	 * @param teammate the teammate to remove from team
 	 */
-	public void removeTeammate(People teammate) {
+	public void removeTeammate(Entity teammate) {
 		team.remove(teammate);
 	}
 }
